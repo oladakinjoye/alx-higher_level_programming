@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-for k in range(10):
-    for j in range(k+1, 10):
-        print(f"{k}{j}", end="")
-        if k != 8 or j != 9:
-            print(", ", end="")
-        else:
-            print()
+num = 0
+while num <= 89:
+    if num % 10 == 0:
+        num += 1 + num // 10
+    print("{:02d}".format(num), end='\n' if num == 89 else ", ")
+    num += 1
