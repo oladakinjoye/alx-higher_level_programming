@@ -8,4 +8,3 @@ for i in range(25, -1, -1):
         output += "{}{}".format(chr(i + 65), chr(i + 97))
 
 print(output, end="")
-
