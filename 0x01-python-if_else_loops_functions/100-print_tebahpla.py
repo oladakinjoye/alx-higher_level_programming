@@ -3,8 +3,8 @@ output = ""
 
 for i in range(25, -1, -1):
     if i % 2 == 0:
-        output += chr(i + 97)
+        output += "{}{}".format(chr(i + 97), chr(i + 65))
     else:
-        output += chr(i + 65)
+        output += "{}{}".format(chr(i + 65), chr(i + 97))
 
-print(output, end="")
+print("{0}".format(output), end="")
