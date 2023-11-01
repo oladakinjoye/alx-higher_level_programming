@@ -1,3 +1,11 @@
 #!/usr/bin/python3
-for i in range(90, 64, -1):
-    print("{}{}".format(chr(i + 32), chr(i)), end="")
+output = ""
+
+for i in range(25, -1, -1):
+    if i % 2 == 0:
+        output += "{}{}".format(chr(i + 97), chr(i + 65))
+    else:
+        output += "{}{}".format(chr(i + 65), chr(i + 97))
+
+print(output, end="")
+
