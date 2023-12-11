@@ -84,7 +84,7 @@ class Rectangle(Base):
 
     def display(self):
         """
-            Prints to stdout the representation of the rectangle
+            Print to stdout the representation  of the rectangle
         """
         rectangle = ""
         print("\n" * self.y, end="")
